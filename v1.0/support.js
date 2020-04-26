@@ -73,13 +73,13 @@ function drawEvent(){
 
 function postTwitter(){
   //Twitter
-  var text = "【新型コロナウイルス感染症対策支援情報サイト | サンプル市】" + String(supportData[id].name).replace(/&nbsp;/g, ' ') + "【URL】"
+  var text = "【新型コロナウイルス感染症対策支援情報サイト | 富山市の情報" + String(supportData[id].name).replace(/&nbsp;/g, ' ') + "【URL】"
   location.href = "https://twitter.com/share?text=" + encodeURIComponent(text) + "&url=" + supportData[id].url;
 }
 
 function postLine(){
   //LINE
-  var text = "【新型コロナウイルス感染症対策支援情報サイト | サンプル市】" + String(supportData[id].name).replace(/&nbsp;/g, ' ') + "【URL】"
+  var text = "【新型コロナウイルス感染症対策支援情報サイト | 富山市の情報" + String(supportData[id].name).replace(/&nbsp;/g, ' ') + "【URL】"
   location.href = "http://line.me/R/msg/text/?" + encodeURIComponent(text) + " " + supportData[id].url;
 }
 
